@@ -19,9 +19,13 @@ namespace ConsoleBravo
             articul = articul.Replace("\r\n", ","); //переносы строк - заменяем на символ
 
 
-            String value = articul;            Char delimiter = ',';
+            String value = articul;
+            Char delimiter = ',';
 
-            String[] substrings = value.Split(delimiter);            String[] fibarray = value.Split(delimiter);            foreach (string element in fibarray)            {
+            String[] substrings = value.Split(delimiter);
+            String[] fibarray = value.Split(delimiter);
+            foreach (string element in fibarray)
+            {
 
                 FtpWebRequest frpWebRequest = (FtpWebRequest)FtpWebRequest.Create("ftp://85.235.48.6:5251/НОВИНКИ/" + element + ".jpg");
                 frpWebRequest.Credentials = new NetworkCredential("bravo_guest", "Veseluha");
@@ -37,7 +41,8 @@ namespace ConsoleBravo
                     list.Add((byte)b);
                 File.WriteAllBytes("img/Б"+ element + ".jpg", list.ToArray());
 
-                Console.WriteLine("Картинка " + element + ".jpg скачана");
+                Console.WriteLine("Картинка " + element + ".jpg скачана");
+
                 stream.Close();
                 response.Close();
             }
