@@ -21,18 +21,7 @@ namespace ConsoleBravo
 
             String value = articul;            Char delimiter = ',';
 
-            String[] substrings = value.Split(delimiter);            // Console.WriteLine(substrings.Length);
-
-
-            /*
-            // Get the object used to communicate with the server.  
-            FtpWebRequest request = (FtpWebRequest)WebRequest.Create("ftp://85.235.48.6:5251");
-            request.Method = WebRequestMethods.Ftp.ListDirectoryDetails;
-
-            // This example assumes the FTP site uses anonymous logon.  
-            request.Credentials = new NetworkCredential("bravo_guest", "Veseluha");
-            */
-            String[] fibarray = value.Split(delimiter);            foreach (string element in fibarray)            {
+            String[] substrings = value.Split(delimiter);            String[] fibarray = value.Split(delimiter);            foreach (string element in fibarray)            {
 
                 FtpWebRequest frpWebRequest = (FtpWebRequest)FtpWebRequest.Create("ftp://85.235.48.6:5251/НОВИНКИ/" + element + ".jpg");
                 frpWebRequest.Credentials = new NetworkCredential("bravo_guest", "Veseluha");
@@ -52,7 +41,7 @@ namespace ConsoleBravo
                 stream.Close();
                 response.Close();
             }
-
+            Console.WriteLine("press any key to continue... ");
             Console.ReadLine();
         }
     }
