@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleBravo", "ConsoleBravo\ConsoleBravo.csproj", "{DDB57F38-8D9F-4152-8535-82C77B800803}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DDB57F38-8D9F-4152-8535-82C77B800803}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDB57F38-8D9F-4152-8535-82C77B800803}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDB57F38-8D9F-4152-8535-82C77B800803}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDB57F38-8D9F-4152-8535-82C77B800803}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {200B2215-2D6F-4747-91FF-37ACCAB68208}
+	EndGlobalSection
+EndGlobal
